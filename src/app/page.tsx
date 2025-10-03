@@ -104,35 +104,56 @@ export default function WeatherhavenHomePage() {
         }}
       >
 
-        {/* Features Section */}
+        {/* Features Section - Overlay Style */}
         <div style={{
           width: '100%',
           maxWidth: '1200px',
           margin: '0 auto',
-          padding: '60px 20px'
+          padding: '60px 20px',
+          position: 'relative',
+          zIndex: 2
         }}>
           <div style={{
             textAlign: 'center',
             marginBottom: '60px'
           }}>
-            <h2 style={{
-              fontSize: '3rem',
+            <h1 style={{
+              fontSize: 'clamp(3.5rem, 8vw, 6rem)',
               fontWeight: '900',
               color: '#ffffff',
-              marginBottom: '20px',
-              letterSpacing: '0.1em',
-              textTransform: 'uppercase'
+              marginBottom: '30px',
+              letterSpacing: '0.15em',
+              textTransform: 'uppercase',
+              textShadow: '0 8px 32px rgba(0, 0, 0, 0.8)',
+              background: 'linear-gradient(135deg, #ffffff 0%, #e0e7ff 50%, #ffffff 100%)',
+              backgroundClip: 'text',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent'
             }}>
-              Global Leader in Deployable Solutions
-            </h2>
-            <p style={{
-              fontSize: '1.2rem',
-              color: '#cccccc',
+              WORLD LEADER IN DEPLOYABLE MILITARY SHELTERS
+            </h1>
+            
+            <div style={{
+              fontSize: 'clamp(1.5rem, 4vw, 2.5rem)',
               fontWeight: '300',
-              letterSpacing: '0.05em'
+              color: '#e0e7ff',
+              letterSpacing: '0.1em',
+              textTransform: 'uppercase',
+              textShadow: '0 4px 20px rgba(0, 0, 0, 0.8)',
+              marginBottom: '20px'
             }}>
-              Advanced shelter systems for military, emergency response, and remote operations.
-            </p>
+              Rapidly Deploying Mobile Infrastructure
+            </div>
+            
+            <div style={{
+              fontSize: 'clamp(1.2rem, 3vw, 1.8rem)',
+              fontWeight: '400',
+              color: '#ffffff',
+              letterSpacing: '0.05em',
+              textShadow: '0 4px 20px rgba(0, 0, 0, 0.8)'
+            }}>
+              Anywhere in the World
+            </div>
           </div>
 
           <div style={{
@@ -145,12 +166,12 @@ export default function WeatherhavenHomePage() {
             <motion.div
               whileHover={{ scale: 1.05, y: -8 }}
               style={{
-                background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(20, 20, 20, 0.6) 100%)',
-                border: '2px solid rgba(255, 255, 255, 0.15)',
+                background: 'rgba(0, 0, 0, 0.4)',
+                border: '2px solid rgba(255, 255, 255, 0.2)',
                 borderRadius: '16px',
                 padding: '32px',
-                backdropFilter: 'blur(10px)',
-                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)',
+                backdropFilter: 'blur(15px)',
+                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.5)',
                 position: 'relative',
                 overflow: 'hidden'
               }}
@@ -179,12 +200,12 @@ export default function WeatherhavenHomePage() {
             <motion.div
               whileHover={{ scale: 1.05, y: -8 }}
               style={{
-                background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(20, 20, 20, 0.6) 100%)',
-                border: '2px solid rgba(255, 255, 255, 0.15)',
+                background: 'rgba(0, 0, 0, 0.4)',
+                border: '2px solid rgba(255, 255, 255, 0.2)',
                 borderRadius: '16px',
                 padding: '32px',
-                backdropFilter: 'blur(10px)',
-                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)',
+                backdropFilter: 'blur(15px)',
+                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.5)',
                 position: 'relative',
                 overflow: 'hidden'
               }}
@@ -213,12 +234,12 @@ export default function WeatherhavenHomePage() {
             <motion.div
               whileHover={{ scale: 1.05, y: -8 }}
               style={{
-                background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(20, 20, 20, 0.6) 100%)',
-                border: '2px solid rgba(255, 255, 255, 0.15)',
+                background: 'rgba(0, 0, 0, 0.4)',
+                border: '2px solid rgba(255, 255, 255, 0.2)',
                 borderRadius: '16px',
                 padding: '32px',
-                backdropFilter: 'blur(10px)',
-                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)',
+                backdropFilter: 'blur(15px)',
+                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.5)',
                 position: 'relative',
                 overflow: 'hidden'
               }}
@@ -245,571 +266,6 @@ export default function WeatherhavenHomePage() {
           </div>
         </div>
 
-        {/* SEXY Military Section */}
-        <div id="military-section" style={{
-          width: '100%',
-          maxWidth: '1400px',
-          margin: '0 auto',
-          padding: '80px 20px',
-          position: 'relative'
-        }}>
-          {/* Dimmed Background Overlay */}
-          <div style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.7) 100%)',
-            borderRadius: '32px',
-            backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.1)',
-            boxShadow: '0 32px 80px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
-            zIndex: 0
-          }}></div>
-
-          {/* Content */}
-          <div style={{ position: 'relative', zIndex: 1 }}>
-            {/* Section Header */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              style={{
-                textAlign: 'center',
-                marginBottom: '80px'
-              }}
-            >
-              <h2 style={{
-                fontSize: 'clamp(3rem, 6vw, 5rem)',
-                fontWeight: '900',
-                color: '#ffffff',
-                marginBottom: '24px',
-                letterSpacing: '0.15em',
-                textTransform: 'uppercase',
-                textShadow: '0 4px 20px rgba(0, 0, 0, 0.8)',
-                background: 'linear-gradient(135deg, #ffffff 0%, #e0e7ff 50%, #ffffff 100%)',
-                backgroundClip: 'text',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent'
-              }}>
-                Military Solutions
-              </h2>
-              <p style={{
-                fontSize: '1.4rem',
-                color: '#e0e7ff',
-                fontWeight: '300',
-                letterSpacing: '0.05em',
-                maxWidth: '600px',
-                margin: '0 auto',
-                lineHeight: '1.6'
-              }}>
-                Battle-tested shelter systems designed for extreme conditions and rapid deployment in combat environments.
-              </p>
-            </motion.div>
-
-            {/* 3 Photo Modules with Bullet Points */}
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
-              gap: '60px',
-              marginBottom: '80px'
-            }}>
-              {/* Module 1 - TRECC */}
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                whileHover={{ scale: 1.02, y: -8 }}
-                style={{
-                  background: 'linear-gradient(135deg, rgba(0, 102, 204, 0.15) 0%, rgba(0, 102, 204, 0.05) 100%)',
-                  border: '2px solid rgba(0, 102, 204, 0.3)',
-                  borderRadius: '24px',
-                  padding: '40px',
-                  backdropFilter: 'blur(20px)',
-                  boxShadow: '0 20px 60px rgba(0, 102, 204, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
-                  position: 'relative',
-                  overflow: 'hidden'
-                }}
-              >
-                {/* TRECC Product Image */}
-                <div style={{
-                  width: '100%',
-                  height: '250px',
-                  backgroundImage: 'url(/models/trecc-military-deployment.jpg)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat',
-                  borderRadius: '16px',
-                  marginBottom: '30px',
-                  position: 'relative',
-                  overflow: 'hidden',
-                  boxShadow: '0 12px 32px rgba(0, 102, 204, 0.3)',
-                  border: '2px solid rgba(255, 255, 255, 0.1)'
-                }}>
-                  {/* Image overlay for better text readability */}
-                  <div style={{
-                    position: 'absolute',
-                    bottom: 0,
-                    left: 0,
-                    right: 0,
-                    background: 'linear-gradient(transparent, rgba(0, 0, 0, 0.8))',
-                    padding: '20px',
-                    color: '#ffffff'
-                  }}>
-                    <div style={{
-                      fontSize: '1.2rem',
-                      fontWeight: '700',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.1em',
-                      marginBottom: '4px'
-                    }}>
-                      TRECC Military Deployment
-                    </div>
-                    <div style={{
-                      fontSize: '0.9rem',
-                      opacity: 0.9
-                    }}>
-                      Rapid deployment in extreme conditions
-                    </div>
-                  </div>
-                </div>
-
-                <h3 style={{
-                  fontSize: '2.2rem',
-                  fontWeight: '800',
-                  color: '#ffffff',
-                  marginBottom: '20px',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.1em'
-                }}>
-                  TRECC
-                </h3>
-
-                {/* Bullet Points */}
-                <div style={{ marginBottom: '30px' }}>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    marginBottom: '12px',
-                    fontSize: '1.1rem',
-                    color: '#e0e7ff'
-                  }}>
-                    <div style={{
-                      width: '8px',
-                      height: '8px',
-                      background: 'linear-gradient(135deg, #3b82f6 0%, #1e40af 100%)',
-                      borderRadius: '50%',
-                      marginRight: '16px',
-                      boxShadow: '0 0 12px rgba(59, 130, 246, 0.5)'
-                    }}></div>
-                    <span>3-minute rapid deployment</span>
-                  </div>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    marginBottom: '12px',
-                    fontSize: '1.1rem',
-                    color: '#e0e7ff'
-                  }}>
-                    <div style={{
-                      width: '8px',
-                      height: '8px',
-                      background: 'linear-gradient(135deg, #3b82f6 0%, #1e40af 100%)',
-                      borderRadius: '50%',
-                      marginRight: '16px',
-                      boxShadow: '0 0 12px rgba(59, 130, 246, 0.5)'
-                    }}></div>
-                    <span>6-personnel capacity</span>
-                  </div>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    marginBottom: '12px',
-                    fontSize: '1.1rem',
-                    color: '#e0e7ff'
-                  }}>
-                    <div style={{
-                      width: '8px',
-                      height: '8px',
-                      background: 'linear-gradient(135deg, #3b82f6 0%, #1e40af 100%)',
-                      borderRadius: '50%',
-                      marginRight: '16px',
-                      boxShadow: '0 0 12px rgba(59, 130, 246, 0.5)'
-                    }}></div>
-                    <span>Extreme weather protection</span>
-                  </div>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    marginBottom: '12px',
-                    fontSize: '1.1rem',
-                    color: '#e0e7ff'
-                  }}>
-                    <div style={{
-                      width: '8px',
-                      height: '8px',
-                      background: 'linear-gradient(135deg, #3b82f6 0%, #1e40af 100%)',
-                      borderRadius: '50%',
-                      marginRight: '16px',
-                      boxShadow: '0 0 12px rgba(59, 130, 246, 0.5)'
-                    }}></div>
-                    <span>Military-grade construction</span>
-                  </div>
-                </div>
-              </motion.div>
-
-              {/* Module 2 - Field Command */}
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                whileHover={{ scale: 1.02, y: -8 }}
-                style={{
-                  background: 'linear-gradient(135deg, rgba(255, 102, 0, 0.15) 0%, rgba(255, 102, 0, 0.05) 100%)',
-                  border: '2px solid rgba(255, 102, 0, 0.3)',
-                  borderRadius: '24px',
-                  padding: '40px',
-                  backdropFilter: 'blur(20px)',
-                  boxShadow: '0 20px 60px rgba(255, 102, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
-                  position: 'relative',
-                  overflow: 'hidden'
-                }}
-              >
-                {/* Field Command Product Image */}
-                <div style={{
-                  width: '100%',
-                  height: '250px',
-                  backgroundImage: 'url(/models/field-command-center.jpg)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat',
-                  borderRadius: '16px',
-                  marginBottom: '30px',
-                  position: 'relative',
-                  overflow: 'hidden',
-                  boxShadow: '0 12px 32px rgba(255, 102, 0, 0.3)',
-                  border: '2px solid rgba(255, 255, 255, 0.1)'
-                }}>
-                  {/* Image overlay for better text readability */}
-                  <div style={{
-                    position: 'absolute',
-                    bottom: 0,
-                    left: 0,
-                    right: 0,
-                    background: 'linear-gradient(transparent, rgba(0, 0, 0, 0.8))',
-                    padding: '20px',
-                    color: '#ffffff'
-                  }}>
-                    <div style={{
-                      fontSize: '1.2rem',
-                      fontWeight: '700',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.1em',
-                      marginBottom: '4px'
-                    }}>
-                      Field Command Center
-                    </div>
-                    <div style={{
-                      fontSize: '0.9rem',
-                      opacity: 0.9
-                    }}>
-                      Advanced command and control operations
-                    </div>
-                  </div>
-                </div>
-
-                <h3 style={{
-                  fontSize: '2.2rem',
-                  fontWeight: '800',
-                  color: '#ffffff',
-                  marginBottom: '20px',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.1em'
-                }}>
-                  Field Command
-                </h3>
-
-                {/* Bullet Points */}
-                <div style={{ marginBottom: '30px' }}>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    marginBottom: '12px',
-                    fontSize: '1.1rem',
-                    color: '#e0e7ff'
-                  }}>
-                    <div style={{
-                      width: '8px',
-                      height: '8px',
-                      background: 'linear-gradient(135deg, #f97316 0%, #dc2626 100%)',
-                      borderRadius: '50%',
-                      marginRight: '16px',
-                      boxShadow: '0 0 12px rgba(249, 115, 22, 0.5)'
-                    }}></div>
-                    <span>Command center operations</span>
-                  </div>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    marginBottom: '12px',
-                    fontSize: '1.1rem',
-                    color: '#e0e7ff'
-                  }}>
-                    <div style={{
-                      width: '8px',
-                      height: '8px',
-                      background: 'linear-gradient(135deg, #f97316 0%, #dc2626 100%)',
-                      borderRadius: '50%',
-                      marginRight: '16px',
-                      boxShadow: '0 0 12px rgba(249, 115, 22, 0.5)'
-                    }}></div>
-                    <span>Secure communications</span>
-                  </div>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    marginBottom: '12px',
-                    fontSize: '1.1rem',
-                    color: '#e0e7ff'
-                  }}>
-                    <div style={{
-                      width: '8px',
-                      height: '8px',
-                      background: 'linear-gradient(135deg, #f97316 0%, #dc2626 100%)',
-                      borderRadius: '50%',
-                      marginRight: '16px',
-                      boxShadow: '0 0 12px rgba(249, 115, 22, 0.5)'
-                    }}></div>
-                    <span>8-personnel capacity</span>
-                  </div>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    marginBottom: '12px',
-                    fontSize: '1.1rem',
-                    color: '#e0e7ff'
-                  }}>
-                    <div style={{
-                      width: '8px',
-                      height: '8px',
-                      background: 'linear-gradient(135deg, #f97316 0%, #dc2626 100%)',
-                      borderRadius: '50%',
-                      marginRight: '16px',
-                      boxShadow: '0 0 12px rgba(249, 115, 22, 0.5)'
-                    }}></div>
-                    <span>Advanced electronics</span>
-                  </div>
-                </div>
-              </motion.div>
-
-              {/* Module 3 - Tactical Operations */}
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                whileHover={{ scale: 1.02, y: -8 }}
-                style={{
-                  background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.15) 0%, rgba(34, 197, 94, 0.05) 100%)',
-                  border: '2px solid rgba(34, 197, 94, 0.3)',
-                  borderRadius: '24px',
-                  padding: '40px',
-                  backdropFilter: 'blur(20px)',
-                  boxShadow: '0 20px 60px rgba(34, 197, 94, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
-                  position: 'relative',
-                  overflow: 'hidden'
-                }}
-              >
-                {/* Tactical Operations Product Image */}
-                <div style={{
-                  width: '100%',
-                  height: '250px',
-                  backgroundImage: 'url(/models/tactical-operations-shelter.jpg)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat',
-                  borderRadius: '16px',
-                  marginBottom: '30px',
-                  position: 'relative',
-                  overflow: 'hidden',
-                  boxShadow: '0 12px 32px rgba(34, 197, 94, 0.3)',
-                  border: '2px solid rgba(255, 255, 255, 0.1)'
-                }}>
-                  {/* Image overlay for better text readability */}
-                  <div style={{
-                    position: 'absolute',
-                    bottom: 0,
-                    left: 0,
-                    right: 0,
-                    background: 'linear-gradient(transparent, rgba(0, 0, 0, 0.8))',
-                    padding: '20px',
-                    color: '#ffffff'
-                  }}>
-                    <div style={{
-                      fontSize: '1.2rem',
-                      fontWeight: '700',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.1em',
-                      marginBottom: '4px'
-                    }}>
-                      Tactical Operations Shelter
-                    </div>
-                    <div style={{
-                      fontSize: '0.9rem',
-                      opacity: 0.9
-                    }}>
-                      Special operations and stealth deployment
-                    </div>
-                  </div>
-                </div>
-
-                <h3 style={{
-                  fontSize: '2.2rem',
-                  fontWeight: '800',
-                  color: '#ffffff',
-                  marginBottom: '20px',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.1em'
-                }}>
-                  Tactical Ops
-                </h3>
-
-                {/* Bullet Points */}
-                <div style={{ marginBottom: '30px' }}>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    marginBottom: '12px',
-                    fontSize: '1.1rem',
-                    color: '#e0e7ff'
-                  }}>
-                    <div style={{
-                      width: '8px',
-                      height: '8px',
-                      background: 'linear-gradient(135deg, #22c55e 0%, #059669 100%)',
-                      borderRadius: '50%',
-                      marginRight: '16px',
-                      boxShadow: '0 0 12px rgba(34, 197, 94, 0.5)'
-                    }}></div>
-                    <span>Special operations ready</span>
-                  </div>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    marginBottom: '12px',
-                    fontSize: '1.1rem',
-                    color: '#e0e7ff'
-                  }}>
-                    <div style={{
-                      width: '8px',
-                      height: '8px',
-                      background: 'linear-gradient(135deg, #22c55e 0%, #059669 100%)',
-                      borderRadius: '50%',
-                      marginRight: '16px',
-                      boxShadow: '0 0 12px rgba(34, 197, 94, 0.5)'
-                    }}></div>
-                    <span>Stealth deployment</span>
-                  </div>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    marginBottom: '12px',
-                    fontSize: '1.1rem',
-                    color: '#e0e7ff'
-                  }}>
-                    <div style={{
-                      width: '8px',
-                      height: '8px',
-                      background: 'linear-gradient(135deg, #22c55e 0%, #059669 100%)',
-                      borderRadius: '50%',
-                      marginRight: '16px',
-                      boxShadow: '0 0 12px rgba(34, 197, 94, 0.5)'
-                    }}></div>
-                    <span>Modular configuration</span>
-                  </div>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    marginBottom: '12px',
-                    fontSize: '1.1rem',
-                    color: '#e0e7ff'
-                  }}>
-                    <div style={{
-                      width: '8px',
-                      height: '8px',
-                      background: 'linear-gradient(135deg, #22c55e 0%, #059669 100%)',
-                      borderRadius: '50%',
-                      marginRight: '16px',
-                      boxShadow: '0 0 12px rgba(34, 197, 94, 0.5)'
-                    }}></div>
-                    <span>Rapid response capability</span>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-
-            {/* Professional Military Operations Image */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 0.8 }}
-              style={{
-                width: '100%',
-                height: '500px',
-                backgroundImage: 'url(/models/military-operations-global.jpg)',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                borderRadius: '32px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                border: '2px solid rgba(255, 255, 255, 0.1)',
-                boxShadow: '0 32px 80px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
-                position: 'relative',
-                overflow: 'hidden'
-              }}
-            >
-              {/* Professional overlay for text readability */}
-              <div style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 100%)',
-                zIndex: 1
-              }}></div>
-              
-              <div style={{
-                fontSize: '2.5rem',
-                fontWeight: '900',
-                color: '#ffffff',
-                textTransform: 'uppercase',
-                letterSpacing: '0.2em',
-                textAlign: 'center',
-                textShadow: '0 4px 20px rgba(0, 0, 0, 0.8)',
-                background: 'linear-gradient(135deg, #ffffff 0%, #e0e7ff 50%, #ffffff 100%)',
-                backgroundClip: 'text',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                position: 'relative',
-                zIndex: 2
-              }}>
-                Military Operations
-                <div style={{
-                  fontSize: '1.2rem',
-                  fontWeight: '300',
-                  marginTop: '16px',
-                  letterSpacing: '0.1em',
-                  color: '#e0e7ff'
-                }}>
-                  Deploy Anywhere • Anytime • Any Conditions
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
 
         {/* Call to Action */}
         <motion.div
