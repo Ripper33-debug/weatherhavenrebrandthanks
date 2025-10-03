@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Header from '../components/Header';
 
 export default function WeatherhavenHomePage() {
   const [mounted, setMounted] = useState(false);
@@ -21,13 +22,14 @@ export default function WeatherhavenHomePage() {
     <div style={{
       minHeight: '100vh',
       background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%)',
-      padding: '60px 24px',
+      padding: '120px 24px 60px 24px',
       fontFamily: '"Inter", "SF Pro Display", system-ui, -apple-system, sans-serif',
       position: 'relative',
       overflow: 'hidden',
       border: '1px solid rgba(255, 255, 255, 0.08)',
       boxShadow: 'inset 0 0 100px rgba(255, 255, 255, 0.02)'
     }}>
+      <Header />
       
       {/* Hero Background Placeholder */}
       <div style={{
@@ -277,6 +279,231 @@ export default function WeatherhavenHomePage() {
               }}>
                 Specialized shelter systems for research stations, mining operations, and remote infrastructure projects.
               </p>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* Military Section */}
+        <div id="military-section" style={{
+          width: '100%',
+          maxWidth: '1200px',
+          margin: '0 auto',
+          padding: '60px 20px'
+        }}>
+          <div style={{
+            textAlign: 'center',
+            marginBottom: '60px'
+          }}>
+            <h2 style={{
+              fontSize: '3rem',
+              fontWeight: '900',
+              color: '#ffffff',
+              marginBottom: '20px',
+              letterSpacing: '0.1em',
+              textTransform: 'uppercase'
+            }}>
+              Military Solutions
+            </h2>
+            <p style={{
+              fontSize: '1.2rem',
+              color: '#cccccc',
+              fontWeight: '300',
+              letterSpacing: '0.05em'
+            }}>
+              Battle-tested shelter systems designed for extreme conditions and rapid deployment in combat environments.
+            </p>
+          </div>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+            gap: '40px',
+            marginBottom: '60px'
+          }}>
+            {/* TRECC Military Card */}
+            <motion.div
+              whileHover={{ scale: 1.05, y: -12 }}
+              style={{
+                background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(20, 20, 20, 0.7) 100%)',
+                border: '2px solid rgba(0, 102, 204, 0.4)',
+                borderRadius: '20px',
+                padding: '40px',
+                backdropFilter: 'blur(15px)',
+                boxShadow: '0 12px 48px rgba(0, 102, 204, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
+                position: 'relative',
+                overflow: 'hidden'
+              }}
+            >
+              <div style={{
+                position: 'absolute',
+                top: '20px',
+                right: '20px',
+                background: 'linear-gradient(135deg, rgba(0, 102, 204, 0.8) 0%, rgba(77, 166, 255, 0.6) 100%)',
+                border: '1px solid rgba(0, 102, 204, 0.4)',
+                borderRadius: '8px',
+                padding: '6px 12px',
+                fontSize: '0.8rem',
+                fontWeight: '600',
+                color: '#ffffff',
+                letterSpacing: '0.05em',
+                textTransform: 'uppercase'
+              }}>
+                Military Grade
+              </div>
+              
+              <h3 style={{
+                fontSize: '2rem',
+                fontWeight: '700',
+                color: '#ffffff',
+                marginBottom: '16px',
+                textTransform: 'uppercase',
+                letterSpacing: '0.1em'
+              }}>
+                TRECC
+              </h3>
+              <p style={{
+                fontSize: '1.1rem',
+                color: '#cccccc',
+                lineHeight: '1.6',
+                fontWeight: '300',
+                marginBottom: '24px'
+              }}>
+                Advanced deployable shelter system with multiple configuration options for military operations, emergency response, and remote operations.
+              </p>
+              
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(2, 1fr)',
+                gap: '16px',
+                marginBottom: '24px'
+              }}>
+                <div>
+                  <div style={{ fontSize: '1.2rem', fontWeight: '700', color: '#ffffff', marginBottom: '4px' }}>3 Minutes</div>
+                  <div style={{ fontSize: '0.9rem', color: '#cccccc', textTransform: 'uppercase' }}>Deployment</div>
+                </div>
+                <div>
+                  <div style={{ fontSize: '1.2rem', fontWeight: '700', color: '#ffffff', marginBottom: '4px' }}>6 Personnel</div>
+                  <div style={{ fontSize: '0.9rem', color: '#cccccc', textTransform: 'uppercase' }}>Capacity</div>
+                </div>
+              </div>
+              
+              <Link href="/configurator/trecc" style={{ textDecoration: 'none' }}>
+                <motion.div
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  style={{
+                    background: 'linear-gradient(135deg, rgba(0, 102, 204, 0.8) 0%, rgba(77, 166, 255, 0.6) 100%)',
+                    border: '2px solid rgba(0, 102, 204, 0.6)',
+                    borderRadius: '12px',
+                    padding: '16px 32px',
+                    color: '#ffffff',
+                    fontSize: '1.1rem',
+                    fontWeight: '700',
+                    letterSpacing: '0.05em',
+                    textTransform: 'uppercase',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                    backdropFilter: 'blur(10px)',
+                    boxShadow: '0 8px 32px rgba(0, 102, 204, 0.3)',
+                    textAlign: 'center'
+                  }}
+                >
+                  Configure TRECC
+                </motion.div>
+              </Link>
+            </motion.div>
+
+            {/* Field Command Card */}
+            <motion.div
+              whileHover={{ scale: 1.05, y: -12 }}
+              style={{
+                background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(20, 20, 20, 0.7) 100%)',
+                border: '2px solid rgba(255, 102, 0, 0.4)',
+                borderRadius: '20px',
+                padding: '40px',
+                backdropFilter: 'blur(15px)',
+                boxShadow: '0 12px 48px rgba(255, 102, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
+                position: 'relative',
+                overflow: 'hidden'
+              }}
+            >
+              <div style={{
+                position: 'absolute',
+                top: '20px',
+                right: '20px',
+                background: 'linear-gradient(135deg, rgba(255, 102, 0, 0.8) 0%, rgba(255, 153, 51, 0.6) 100%)',
+                border: '1px solid rgba(255, 102, 0, 0.4)',
+                borderRadius: '8px',
+                padding: '6px 12px',
+                fontSize: '0.8rem',
+                fontWeight: '600',
+                color: '#ffffff',
+                letterSpacing: '0.05em',
+                textTransform: 'uppercase'
+              }}>
+                Command Center
+              </div>
+              
+              <h3 style={{
+                fontSize: '2rem',
+                fontWeight: '700',
+                color: '#ffffff',
+                marginBottom: '16px',
+                textTransform: 'uppercase',
+                letterSpacing: '0.1em'
+              }}>
+                Field Command
+              </h3>
+              <p style={{
+                fontSize: '1.1rem',
+                color: '#cccccc',
+                lineHeight: '1.6',
+                fontWeight: '300',
+                marginBottom: '24px'
+              }}>
+                Command and control shelter system for military operations and tactical headquarters with secure communications and advanced electronics.
+              </p>
+              
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(2, 1fr)',
+                gap: '16px',
+                marginBottom: '24px'
+              }}>
+                <div>
+                  <div style={{ fontSize: '1.2rem', fontWeight: '700', color: '#ffffff', marginBottom: '4px' }}>4 Minutes</div>
+                  <div style={{ fontSize: '0.9rem', color: '#cccccc', textTransform: 'uppercase' }}>Deployment</div>
+                </div>
+                <div>
+                  <div style={{ fontSize: '1.2rem', fontWeight: '700', color: '#ffffff', marginBottom: '4px' }}>8 Personnel</div>
+                  <div style={{ fontSize: '0.9rem', color: '#cccccc', textTransform: 'uppercase' }}>Capacity</div>
+                </div>
+              </div>
+              
+              <Link href="/configurator/field-command" style={{ textDecoration: 'none' }}>
+                <motion.div
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  style={{
+                    background: 'linear-gradient(135deg, rgba(255, 102, 0, 0.8) 0%, rgba(255, 153, 51, 0.6) 100%)',
+                    border: '2px solid rgba(255, 102, 0, 0.6)',
+                    borderRadius: '12px',
+                    padding: '16px 32px',
+                    color: '#ffffff',
+                    fontSize: '1.1rem',
+                    fontWeight: '700',
+                    letterSpacing: '0.05em',
+                    textTransform: 'uppercase',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                    backdropFilter: 'blur(10px)',
+                    boxShadow: '0 8px 32px rgba(255, 102, 0, 0.3)',
+                    textAlign: 'center'
+                  }}
+                >
+                  Configure Field Command
+                </motion.div>
+              </Link>
             </motion.div>
           </div>
         </div>
