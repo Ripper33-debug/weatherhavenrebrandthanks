@@ -21,7 +21,7 @@ export default function WeatherhavenHomePage() {
   return (
     <div style={{
       minHeight: '100vh',
-      backgroundImage: 'url(/goodmountainsimagethanks.jpg)',
+      backgroundImage: 'url(/mountain.jpg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
