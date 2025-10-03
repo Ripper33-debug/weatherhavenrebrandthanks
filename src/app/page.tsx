@@ -118,42 +118,17 @@ export default function WeatherhavenHomePage() {
             marginBottom: '60px'
           }}>
             <h1 style={{
-              fontSize: 'clamp(3.5rem, 8vw, 6rem)',
-              fontWeight: '900',
+              fontSize: 'clamp(3rem, 8vw, 5.5rem)',
+              fontWeight: '200',
               color: '#ffffff',
-              marginBottom: '30px',
-              letterSpacing: '0.15em',
+              marginBottom: '0',
+              letterSpacing: '0.25em',
               textTransform: 'uppercase',
-              textShadow: '0 8px 32px rgba(0, 0, 0, 0.8)',
-              background: 'linear-gradient(135deg, #ffffff 0%, #e0e7ff 50%, #ffffff 100%)',
-              backgroundClip: 'text',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent'
+              lineHeight: '1.1',
+              textShadow: '0 8px 32px rgba(0, 0, 0, 0.85)'
             }}>
-              WORLD LEADER IN DEPLOYABLE MILITARY SHELTERS
+              Rapidly Deploying Mobile Infrastructure Anywhere in the World.
             </h1>
-            
-            <div style={{
-              fontSize: 'clamp(1.5rem, 4vw, 2.5rem)',
-              fontWeight: '300',
-              color: '#e0e7ff',
-              letterSpacing: '0.1em',
-              textTransform: 'uppercase',
-              textShadow: '0 4px 20px rgba(0, 0, 0, 0.8)',
-              marginBottom: '20px'
-            }}>
-              Rapidly Deploying Mobile Infrastructure
-            </div>
-            
-            <div style={{
-              fontSize: 'clamp(1.2rem, 3vw, 1.8rem)',
-              fontWeight: '400',
-              color: '#ffffff',
-              letterSpacing: '0.05em',
-              textShadow: '0 4px 20px rgba(0, 0, 0, 0.8)'
-            }}>
-              Anywhere in the World
-            </div>
           </div>
 
           <div style={{
