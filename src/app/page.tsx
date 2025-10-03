@@ -118,15 +118,17 @@ export default function WeatherhavenHomePage() {
             marginBottom: '60px'
           }}>
             <h1 style={{
-              fontSize: 'clamp(3.2rem, 8vw, 6.5rem)',
+              fontSize: 'clamp(2.4rem, 7vw, 5.2rem)',
               fontWeight: 900,
               marginBottom: '0',
-              letterSpacing: '0.2em',
+              letterSpacing: '0.12em',
               textTransform: 'uppercase',
-              lineHeight: '1',
-              whiteSpace: 'nowrap',
-              overflow: 'hidden',
-              textOverflow: 'ellipsis',
+              lineHeight: '1.08',
+              maxWidth: '1200px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              whiteSpace: 'normal',
+              wordBreak: 'keep-all',
               background: 'linear-gradient(135deg, #ffffff 0%, #dbeafe 40%, #60a5fa 60%, #ffffff 100%)',
               WebkitBackgroundClip: 'text',
               backgroundClip: 'text',
