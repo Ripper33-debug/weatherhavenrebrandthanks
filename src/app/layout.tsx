@@ -22,41 +22,42 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: {
-    default: 'TRECC Configurator',
-    template: '%s | TRECC Configurator'
+    default: 'Weatherhaven',
+    template: '%s | Weatherhaven'
   },
-  description: 'Interactive 3D configurator for TRECC deployable shelter systems',
+  description: 'Global leader in deployable shelter solutions for military, emergency response, and remote operations',
   keywords: [
-    'TRECC',
-    'configurator',
-    '3D',
-    'shelter',
-    'deployable'
+    'Weatherhaven',
+    'deployable shelters',
+    'military solutions',
+    'emergency response',
+    'remote operations',
+    'shelter systems'
   ],
-  authors: [{ name: 'TRECC' }],
-  creator: 'TRECC',
-  publisher: 'TRECC',
+  authors: [{ name: 'Weatherhaven' }],
+  creator: 'Weatherhaven',
+  publisher: 'Weatherhaven',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://trecc-configurator.vercel.app'),
+  metadataBase: new URL('https://weatherhaven-configurator.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://trecc-configurator.vercel.app',
-    title: 'TRECC Configurator',
-    description: 'Interactive 3D configurator for TRECC deployable shelter systems',
-    siteName: 'TRECC Configurator',
+    url: 'https://weatherhaven-configurator.vercel.app',
+    title: 'Weatherhaven',
+    description: 'Global leader in deployable shelter solutions for military, emergency response, and remote operations',
+    siteName: 'Weatherhaven',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TRECC Configurator',
-    description: 'Interactive 3D configurator for TRECC deployable shelter systems',
+    title: 'Weatherhaven',
+    description: 'Global leader in deployable shelter solutions for military, emergency response, and remote operations',
   },
   robots: {
     index: true,
