@@ -118,14 +118,20 @@ export default function WeatherhavenHomePage() {
             marginBottom: '60px'
           }}>
             <h1 style={{
-              fontSize: 'clamp(3rem, 8vw, 5.5rem)',
-              fontWeight: '200',
-              color: '#ffffff',
+              fontSize: 'clamp(3.2rem, 8vw, 6.5rem)',
+              fontWeight: 900,
               marginBottom: '0',
-              letterSpacing: '0.25em',
+              letterSpacing: '0.2em',
               textTransform: 'uppercase',
-              lineHeight: '1.1',
-              textShadow: '0 8px 32px rgba(0, 0, 0, 0.85)'
+              lineHeight: '1',
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              background: 'linear-gradient(135deg, #ffffff 0%, #dbeafe 40%, #60a5fa 60%, #ffffff 100%)',
+              WebkitBackgroundClip: 'text',
+              backgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              textShadow: '0 12px 40px rgba(0, 0, 0, 0.8), 0 4px 16px rgba(0, 0, 0, 0.6)'
             }}>
               Rapidly Deploying Mobile Infrastructure Anywhere in the World.
             </h1>
