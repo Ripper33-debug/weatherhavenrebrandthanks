@@ -53,6 +53,25 @@ export default function Header() {
           alignItems: 'center',
           gap: '32px'
         }}>
+          {/* Home Button */}
+          <Link href="/" style={{ textDecoration: 'none' }}>
+            <button
+              style={{
+                background: 'transparent',
+                border: 'none',
+                padding: '12px 24px',
+                color: '#ffffff',
+                fontSize: '1rem',
+                fontWeight: '600',
+                letterSpacing: '0.05em',
+                textTransform: 'uppercase',
+                cursor: 'pointer'
+              }}
+            >
+              Home
+            </button>
+          </Link>
+
           {/* Products Button */}
           <Link href="/products" style={{ textDecoration: 'none' }}>
             <button

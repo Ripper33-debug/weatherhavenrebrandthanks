@@ -19,48 +19,70 @@ export default function ProductsPage() {
 
   const products = [
     {
-      id: 'trecc',
-      name: 'TRECC',
-      category: 'Military Solutions',
-      description: 'Advanced deployable shelter system with multiple configuration options for military, emergency response, and remote operations.',
-      features: ['Multiple configurations', 'Rapid deployment', 'Modular design', 'Extreme weather protection', 'Military-grade construction'],
-      deploymentTime: '3 minutes',
-      capacity: '4-6 personnel',
-      weatherRating: 'Extreme',
-      image: '/models/trecc-preview.jpg'
-    },
-    {
-      id: 'herconn',
-      name: 'HERCONN',
-      category: 'Emergency Response',
-      description: 'High-capacity emergency response shelter designed for disaster relief and humanitarian aid operations.',
-      features: ['High capacity', 'Quick setup', 'Durable construction', 'Weather resistant', 'Modular expansion'],
-      deploymentTime: '5 minutes',
-      capacity: '8-12 personnel',
+      id: 'soft-shelter-tent',
+      name: 'Soft Shelter Tent',
+      category: 'Soft Shelters',
+      description: 'Lightweight and portable tent systems designed for rapid deployment in various environmental conditions.',
+      features: ['Lightweight design', 'Quick setup', 'Weather resistant', 'Portable', 'Modular options'],
+      deploymentTime: '2 minutes',
+      capacity: '2-4 personnel',
       weatherRating: 'High',
-      image: '/models/herconn-preview.jpg'
+      image: '/models/soft-shelter-preview.jpg'
     },
     {
-      id: 'field-command',
-      name: 'Field Command',
-      category: 'Military Solutions',
-      description: 'Command and control shelter system for military operations and tactical headquarters.',
-      features: ['Command center', 'Secure communications', 'Tactical deployment', 'Advanced electronics', 'Security features'],
-      deploymentTime: '4 minutes',
+      id: 'expandable-container',
+      name: 'Expandable Container',
+      category: 'Expandable Shelters',
+      description: 'Container-based expandable shelter systems that provide maximum space efficiency and durability.',
+      features: ['Expandable design', 'Durable construction', 'Maximum space', 'Secure storage', 'Easy transport'],
+      deploymentTime: '5 minutes',
       capacity: '6-8 personnel',
       weatherRating: 'Extreme',
-      image: '/models/field-command-preview.jpg'
+      image: '/models/expandable-container-preview.jpg'
     },
     {
-      id: 'research-station',
-      name: 'Research Station',
-      category: 'Remote Operations',
-      description: 'Specialized shelter system for remote research stations and scientific operations.',
-      features: ['Research facilities', 'Equipment integration', 'Extended deployment', 'Environmental control', 'Data connectivity'],
-      deploymentTime: '6 minutes',
+      id: 'modular-tent',
+      name: 'Modular Tent System',
+      category: 'Soft Shelters',
+      description: 'Flexible tent systems that can be configured in multiple layouts for different operational needs.',
+      features: ['Modular design', 'Multiple configurations', 'Interconnectable', 'Versatile setup', 'Scalable'],
+      deploymentTime: '3 minutes',
       capacity: '4-6 personnel',
       weatherRating: 'High',
-      image: '/models/research-station-preview.jpg'
+      image: '/models/modular-tent-preview.jpg'
+    },
+    {
+      id: 'rapid-deployment',
+      name: 'Rapid Deployment Shelter',
+      category: 'Expandable Shelters',
+      description: 'Ultra-fast deployment shelter systems for emergency response and time-critical operations.',
+      features: ['Ultra-fast setup', 'Emergency ready', 'Compact storage', 'One-person operation', 'All-weather'],
+      deploymentTime: '1 minute',
+      capacity: '2-3 personnel',
+      weatherRating: 'High',
+      image: '/models/rapid-deployment-preview.jpg'
+    },
+    {
+      id: 'heating-systems',
+      name: 'Heating Systems',
+      category: 'Accessories',
+      description: 'Advanced heating and climate control systems for extreme weather conditions.',
+      features: ['Extreme weather', 'Energy efficient', 'Remote control', 'Safety features', 'Easy installation'],
+      deploymentTime: '10 minutes',
+      capacity: 'N/A',
+      weatherRating: 'N/A',
+      image: '/models/heating-systems-preview.jpg'
+    },
+    {
+      id: 'power-solutions',
+      name: 'Power Solutions',
+      category: 'Accessories',
+      description: 'Comprehensive power generation and distribution systems for remote operations.',
+      features: ['Solar powered', 'Generator compatible', 'Battery backup', 'Multiple outlets', 'Weather resistant'],
+      deploymentTime: '15 minutes',
+      capacity: 'N/A',
+      weatherRating: 'N/A',
+      image: '/models/power-solutions-preview.jpg'
     }
   ];
 
@@ -135,7 +157,7 @@ export default function ProductsPage() {
           maxWidth: '600px',
           margin: '0 auto'
         }}>
-          Advanced deployable shelter systems for military, emergency response, and remote operations.
+          Comprehensive range of soft shelters, expandable shelters, and accessories for all operational needs.
         </p>
       </motion.div>
 
