@@ -36,7 +36,8 @@ export default function Header() {
         right: 0,
         zIndex: 1000,
         background: 'transparent',
-        padding: '20px 0'
+        padding: '20px 0',
+        pointerEvents: 'auto'
       }}
     >
       <div style={{
@@ -51,7 +52,9 @@ export default function Header() {
         <nav style={{
           display: 'flex',
           alignItems: 'center',
-          gap: '32px'
+          gap: '32px',
+          position: 'relative',
+          zIndex: 1001
         }}>
           {/* Home Button */}
           <Link href="/" style={{ textDecoration: 'none' }}>
@@ -65,7 +68,10 @@ export default function Header() {
                 fontWeight: '600',
                 letterSpacing: '0.05em',
                 textTransform: 'uppercase',
-                cursor: 'pointer'
+                cursor: 'pointer',
+                position: 'relative',
+                zIndex: 1002,
+                textShadow: '0 0 10px rgba(255, 255, 255, 0.5)'
               }}
             >
               Home
@@ -84,7 +90,10 @@ export default function Header() {
                 fontWeight: '600',
                 letterSpacing: '0.05em',
                 textTransform: 'uppercase',
-                cursor: 'pointer'
+                cursor: 'pointer',
+                position: 'relative',
+                zIndex: 1002,
+                textShadow: '0 0 10px rgba(255, 255, 255, 0.5)'
               }}
             >
               Products
@@ -103,7 +112,10 @@ export default function Header() {
                 fontWeight: '600',
                 letterSpacing: '0.05em',
                 textTransform: 'uppercase',
-                cursor: 'pointer'
+                cursor: 'pointer',
+                position: 'relative',
+                zIndex: 1002,
+                textShadow: '0 0 10px rgba(255, 255, 255, 0.5)'
               }}
             >
               Configurator
@@ -122,7 +134,10 @@ export default function Header() {
               fontWeight: '600',
               letterSpacing: '0.05em',
               textTransform: 'uppercase',
-              cursor: 'pointer'
+              cursor: 'pointer',
+              position: 'relative',
+              zIndex: 1002,
+              textShadow: '0 0 10px rgba(255, 255, 255, 0.5)'
             }}
           >
             Military
