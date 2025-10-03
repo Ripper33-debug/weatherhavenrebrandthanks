@@ -41,28 +41,6 @@ export default function ProductsPage() {
       image: '/models/expandable-container-preview.jpg'
     },
     {
-      id: 'modular-tent',
-      name: 'Modular Tent System',
-      category: 'Soft Shelters',
-      description: 'Flexible tent systems that can be configured in multiple layouts for different operational needs.',
-      features: ['Modular design', 'Multiple configurations', 'Interconnectable', 'Versatile setup', 'Scalable'],
-      deploymentTime: '3 minutes',
-      capacity: '4-6 personnel',
-      weatherRating: 'High',
-      image: '/models/modular-tent-preview.jpg'
-    },
-    {
-      id: 'rapid-deployment',
-      name: 'Rapid Deployment Shelter',
-      category: 'Expandable Shelters',
-      description: 'Ultra-fast deployment shelter systems for emergency response and time-critical operations.',
-      features: ['Ultra-fast setup', 'Emergency ready', 'Compact storage', 'One-person operation', 'All-weather'],
-      deploymentTime: '1 minute',
-      capacity: '2-3 personnel',
-      weatherRating: 'High',
-      image: '/models/rapid-deployment-preview.jpg'
-    },
-    {
       id: 'heating-systems',
       name: 'Heating Systems',
       category: 'Accessories',
@@ -72,17 +50,6 @@ export default function ProductsPage() {
       capacity: 'N/A',
       weatherRating: 'N/A',
       image: '/models/heating-systems-preview.jpg'
-    },
-    {
-      id: 'power-solutions',
-      name: 'Power Solutions',
-      category: 'Accessories',
-      description: 'Comprehensive power generation and distribution systems for remote operations.',
-      features: ['Solar powered', 'Generator compatible', 'Battery backup', 'Multiple outlets', 'Weather resistant'],
-      deploymentTime: '15 minutes',
-      capacity: 'N/A',
-      weatherRating: 'N/A',
-      image: '/models/power-solutions-preview.jpg'
     }
   ];
 
