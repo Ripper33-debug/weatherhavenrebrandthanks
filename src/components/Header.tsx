@@ -100,31 +100,6 @@ export default function Header() {
             </button>
           </Link>
 
-          {/* Shelter Menu Button */}
-          <button
-            onClick={() => {
-              console.log('Shelter Menu button clicked');
-              window.location.href = '/configurator';
-            }}
-            style={{
-              background: 'rgba(0, 102, 204, 0.2)',
-              border: '2px solid rgba(0, 102, 204, 0.5)',
-              padding: '12px 24px',
-              color: '#ffffff',
-              fontSize: '1rem',
-              fontWeight: '600',
-              letterSpacing: '0.05em',
-              textTransform: 'uppercase',
-              cursor: 'pointer',
-              position: 'relative',
-              zIndex: 1002,
-              textShadow: '0 0 10px rgba(255, 255, 255, 0.5)',
-              borderRadius: '8px'
-            }}
-          >
-            Shelter Menu
-          </button>
-
           {/* Military Button */}
           <button
             onClick={scrollToMilitary}

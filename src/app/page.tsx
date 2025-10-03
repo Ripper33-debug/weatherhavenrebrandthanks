@@ -108,7 +108,7 @@ export default function WeatherhavenHomePage() {
         <div style={{
           width: '100%',
           height: '600px',
-          backgroundImage: 'url(/mountainsimagethanks.jpg)',
+          backgroundImage: 'url(/goodmountainsimagethanks.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -122,6 +122,17 @@ export default function WeatherhavenHomePage() {
           boxShadow: '0 24px 80px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
           backdropFilter: 'blur(15px)'
         }}>
+          {/* Fallback gradient background in case image doesn't load */}
+          <div style={{
+            width: '100%',
+            height: '100%',
+            background: 'linear-gradient(135deg, #1e3a8a 0%, #3b82f6 25%, #06b6d4 50%, #10b981 75%, #f59e0b 100%)',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            zIndex: 0
+          }}></div>
+          
           {/* Overlay for better text readability */}
           <div style={{
             width: '100%',
@@ -132,6 +143,7 @@ export default function WeatherhavenHomePage() {
             left: 0,
             zIndex: 1
           }}></div>
+          
           <div style={{
             fontSize: '4rem',
             color: '#ffffff',
