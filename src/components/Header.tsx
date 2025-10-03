@@ -101,26 +101,29 @@ export default function Header() {
           </Link>
 
           {/* Configurator Button */}
-          <Link href="/configurator" style={{ textDecoration: 'none' }}>
-            <button
-              style={{
-                background: 'transparent',
-                border: 'none',
-                padding: '12px 24px',
-                color: '#ffffff',
-                fontSize: '1rem',
-                fontWeight: '600',
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase',
-                cursor: 'pointer',
-                position: 'relative',
-                zIndex: 1002,
-                textShadow: '0 0 10px rgba(255, 255, 255, 0.5)'
-              }}
-            >
-              Configurator
-            </button>
-          </Link>
+          <button
+            onClick={() => {
+              console.log('Configurator button clicked');
+              window.location.href = '/configurator';
+            }}
+            style={{
+              background: 'rgba(0, 102, 204, 0.2)',
+              border: '2px solid rgba(0, 102, 204, 0.5)',
+              padding: '12px 24px',
+              color: '#ffffff',
+              fontSize: '1rem',
+              fontWeight: '600',
+              letterSpacing: '0.05em',
+              textTransform: 'uppercase',
+              cursor: 'pointer',
+              position: 'relative',
+              zIndex: 1002,
+              textShadow: '0 0 10px rgba(255, 255, 255, 0.5)',
+              borderRadius: '8px'
+            }}
+          >
+            Configurator
+          </button>
 
           {/* Military Button */}
           <button

@@ -9,10 +9,23 @@ export default function ConfiguratorPage() {
 
   useEffect(() => {
     setMounted(true);
+    console.log('Configurator page loaded');
   }, []);
 
   if (!mounted) {
-    return null;
+    return (
+      <div style={{
+        minHeight: '100vh',
+        background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: '#ffffff',
+        fontSize: '2rem'
+      }}>
+        Loading Configurator...
+      </div>
+    );
   }
 
   return (
