@@ -245,227 +245,483 @@ export default function WeatherhavenHomePage() {
           </div>
         </div>
 
-        {/* Military Section */}
+        {/* SEXY Military Section */}
         <div id="military-section" style={{
           width: '100%',
-          maxWidth: '1200px',
+          maxWidth: '1400px',
           margin: '0 auto',
-          padding: '60px 20px'
+          padding: '80px 20px',
+          position: 'relative'
         }}>
+          {/* Dimmed Background Overlay */}
           <div style={{
-            textAlign: 'center',
-            marginBottom: '60px'
-          }}>
-            <h2 style={{
-              fontSize: '3rem',
-              fontWeight: '900',
-              color: '#ffffff',
-              marginBottom: '20px',
-              letterSpacing: '0.1em',
-              textTransform: 'uppercase'
-            }}>
-              Military Solutions
-            </h2>
-            <p style={{
-              fontSize: '1.2rem',
-              color: '#cccccc',
-              fontWeight: '300',
-              letterSpacing: '0.05em'
-            }}>
-              Battle-tested shelter systems designed for extreme conditions and rapid deployment in combat environments.
-            </p>
-          </div>
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.7) 100%)',
+            borderRadius: '32px',
+            backdropFilter: 'blur(20px)',
+            border: '1px solid rgba(255, 255, 255, 0.1)',
+            boxShadow: '0 32px 80px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
+            zIndex: 0
+          }}></div>
 
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
-            gap: '40px',
-            marginBottom: '60px'
-          }}>
-            {/* TRECC Military Card */}
+          {/* Content */}
+          <div style={{ position: 'relative', zIndex: 1 }}>
+            {/* Section Header */}
             <motion.div
-              whileHover={{ scale: 1.05, y: -12 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
               style={{
-                background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(20, 20, 20, 0.7) 100%)',
-                border: '2px solid rgba(0, 102, 204, 0.4)',
-                borderRadius: '20px',
-                padding: '40px',
-                backdropFilter: 'blur(15px)',
-                boxShadow: '0 12px 48px rgba(0, 102, 204, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
-                position: 'relative',
-                overflow: 'hidden'
+                textAlign: 'center',
+                marginBottom: '80px'
               }}
             >
-              <div style={{
-                position: 'absolute',
-                top: '20px',
-                right: '20px',
-                background: 'linear-gradient(135deg, rgba(0, 102, 204, 0.8) 0%, rgba(77, 166, 255, 0.6) 100%)',
-                border: '1px solid rgba(0, 102, 204, 0.4)',
-                borderRadius: '8px',
-                padding: '6px 12px',
-                fontSize: '0.8rem',
-                fontWeight: '600',
+              <h2 style={{
+                fontSize: 'clamp(3rem, 6vw, 5rem)',
+                fontWeight: '900',
                 color: '#ffffff',
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase'
-              }}>
-                Military Grade
-              </div>
-              
-              <h3 style={{
-                fontSize: '2rem',
-                fontWeight: '700',
-                color: '#ffffff',
-                marginBottom: '16px',
+                marginBottom: '24px',
+                letterSpacing: '0.15em',
                 textTransform: 'uppercase',
-                letterSpacing: '0.1em'
+                textShadow: '0 4px 20px rgba(0, 0, 0, 0.8)',
+                background: 'linear-gradient(135deg, #ffffff 0%, #e0e7ff 50%, #ffffff 100%)',
+                backgroundClip: 'text',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent'
               }}>
-                TRECC
-              </h3>
+                Military Solutions
+              </h2>
               <p style={{
-                fontSize: '1.1rem',
-                color: '#cccccc',
-                lineHeight: '1.6',
+                fontSize: '1.4rem',
+                color: '#e0e7ff',
                 fontWeight: '300',
-                marginBottom: '24px'
+                letterSpacing: '0.05em',
+                maxWidth: '600px',
+                margin: '0 auto',
+                lineHeight: '1.6'
               }}>
-                Advanced deployable shelter system with multiple configuration options for military operations, emergency response, and remote operations.
+                Battle-tested shelter systems designed for extreme conditions and rapid deployment in combat environments.
               </p>
-              
-              <div style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(2, 1fr)',
-                gap: '16px',
-                marginBottom: '24px'
-              }}>
-                <div>
-                  <div style={{ fontSize: '1.2rem', fontWeight: '700', color: '#ffffff', marginBottom: '4px' }}>3 Minutes</div>
-                  <div style={{ fontSize: '0.9rem', color: '#cccccc', textTransform: 'uppercase' }}>Deployment</div>
-                </div>
-                <div>
-                  <div style={{ fontSize: '1.2rem', fontWeight: '700', color: '#ffffff', marginBottom: '4px' }}>6 Personnel</div>
-                  <div style={{ fontSize: '0.9rem', color: '#cccccc', textTransform: 'uppercase' }}>Capacity</div>
-                </div>
-              </div>
-              
-              <Link href="/configurator/trecc" style={{ textDecoration: 'none' }}>
-                <motion.div
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  style={{
-                    background: 'linear-gradient(135deg, rgba(0, 102, 204, 0.8) 0%, rgba(77, 166, 255, 0.6) 100%)',
-                    border: '2px solid rgba(0, 102, 204, 0.6)',
-                    borderRadius: '12px',
-                    padding: '16px 32px',
-                    color: '#ffffff',
-                    fontSize: '1.1rem',
-                    fontWeight: '700',
-                    letterSpacing: '0.05em',
-                    textTransform: 'uppercase',
-                    cursor: 'pointer',
-                    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                    backdropFilter: 'blur(10px)',
-                    boxShadow: '0 8px 32px rgba(0, 102, 204, 0.3)',
-                    textAlign: 'center'
-                  }}
-                >
-                  Configure TRECC
-                </motion.div>
-              </Link>
             </motion.div>
 
-            {/* Field Command Card */}
+            {/* 3 Photo Modules with Bullet Points */}
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
+              gap: '60px',
+              marginBottom: '80px'
+            }}>
+              {/* Module 1 - TRECC */}
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                whileHover={{ scale: 1.02, y: -8 }}
+                style={{
+                  background: 'linear-gradient(135deg, rgba(0, 102, 204, 0.15) 0%, rgba(0, 102, 204, 0.05) 100%)',
+                  border: '2px solid rgba(0, 102, 204, 0.3)',
+                  borderRadius: '24px',
+                  padding: '40px',
+                  backdropFilter: 'blur(20px)',
+                  boxShadow: '0 20px 60px rgba(0, 102, 204, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
+                  position: 'relative',
+                  overflow: 'hidden'
+                }}
+              >
+                {/* Photo Placeholder */}
+                <div style={{
+                  width: '100%',
+                  height: '250px',
+                  background: 'linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%)',
+                  borderRadius: '16px',
+                  marginBottom: '30px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '1.5rem',
+                  fontWeight: '700',
+                  color: '#ffffff',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em',
+                  boxShadow: '0 12px 32px rgba(0, 102, 204, 0.3)'
+                }}>
+                  TRECC Image
+                </div>
+
+                <h3 style={{
+                  fontSize: '2.2rem',
+                  fontWeight: '800',
+                  color: '#ffffff',
+                  marginBottom: '20px',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em'
+                }}>
+                  TRECC
+                </h3>
+
+                {/* Bullet Points */}
+                <div style={{ marginBottom: '30px' }}>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginBottom: '12px',
+                    fontSize: '1.1rem',
+                    color: '#e0e7ff'
+                  }}>
+                    <div style={{
+                      width: '8px',
+                      height: '8px',
+                      background: 'linear-gradient(135deg, #3b82f6 0%, #1e40af 100%)',
+                      borderRadius: '50%',
+                      marginRight: '16px',
+                      boxShadow: '0 0 12px rgba(59, 130, 246, 0.5)'
+                    }}></div>
+                    <span>3-minute rapid deployment</span>
+                  </div>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginBottom: '12px',
+                    fontSize: '1.1rem',
+                    color: '#e0e7ff'
+                  }}>
+                    <div style={{
+                      width: '8px',
+                      height: '8px',
+                      background: 'linear-gradient(135deg, #3b82f6 0%, #1e40af 100%)',
+                      borderRadius: '50%',
+                      marginRight: '16px',
+                      boxShadow: '0 0 12px rgba(59, 130, 246, 0.5)'
+                    }}></div>
+                    <span>6-personnel capacity</span>
+                  </div>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginBottom: '12px',
+                    fontSize: '1.1rem',
+                    color: '#e0e7ff'
+                  }}>
+                    <div style={{
+                      width: '8px',
+                      height: '8px',
+                      background: 'linear-gradient(135deg, #3b82f6 0%, #1e40af 100%)',
+                      borderRadius: '50%',
+                      marginRight: '16px',
+                      boxShadow: '0 0 12px rgba(59, 130, 246, 0.5)'
+                    }}></div>
+                    <span>Extreme weather protection</span>
+                  </div>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginBottom: '12px',
+                    fontSize: '1.1rem',
+                    color: '#e0e7ff'
+                  }}>
+                    <div style={{
+                      width: '8px',
+                      height: '8px',
+                      background: 'linear-gradient(135deg, #3b82f6 0%, #1e40af 100%)',
+                      borderRadius: '50%',
+                      marginRight: '16px',
+                      boxShadow: '0 0 12px rgba(59, 130, 246, 0.5)'
+                    }}></div>
+                    <span>Military-grade construction</span>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Module 2 - Field Command */}
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                whileHover={{ scale: 1.02, y: -8 }}
+                style={{
+                  background: 'linear-gradient(135deg, rgba(255, 102, 0, 0.15) 0%, rgba(255, 102, 0, 0.05) 100%)',
+                  border: '2px solid rgba(255, 102, 0, 0.3)',
+                  borderRadius: '24px',
+                  padding: '40px',
+                  backdropFilter: 'blur(20px)',
+                  boxShadow: '0 20px 60px rgba(255, 102, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
+                  position: 'relative',
+                  overflow: 'hidden'
+                }}
+              >
+                {/* Photo Placeholder */}
+                <div style={{
+                  width: '100%',
+                  height: '250px',
+                  background: 'linear-gradient(135deg, #dc2626 0%, #f97316 100%)',
+                  borderRadius: '16px',
+                  marginBottom: '30px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '1.5rem',
+                  fontWeight: '700',
+                  color: '#ffffff',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em',
+                  boxShadow: '0 12px 32px rgba(255, 102, 0, 0.3)'
+                }}>
+                  Field Command Image
+                </div>
+
+                <h3 style={{
+                  fontSize: '2.2rem',
+                  fontWeight: '800',
+                  color: '#ffffff',
+                  marginBottom: '20px',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em'
+                }}>
+                  Field Command
+                </h3>
+
+                {/* Bullet Points */}
+                <div style={{ marginBottom: '30px' }}>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginBottom: '12px',
+                    fontSize: '1.1rem',
+                    color: '#e0e7ff'
+                  }}>
+                    <div style={{
+                      width: '8px',
+                      height: '8px',
+                      background: 'linear-gradient(135deg, #f97316 0%, #dc2626 100%)',
+                      borderRadius: '50%',
+                      marginRight: '16px',
+                      boxShadow: '0 0 12px rgba(249, 115, 22, 0.5)'
+                    }}></div>
+                    <span>Command center operations</span>
+                  </div>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginBottom: '12px',
+                    fontSize: '1.1rem',
+                    color: '#e0e7ff'
+                  }}>
+                    <div style={{
+                      width: '8px',
+                      height: '8px',
+                      background: 'linear-gradient(135deg, #f97316 0%, #dc2626 100%)',
+                      borderRadius: '50%',
+                      marginRight: '16px',
+                      boxShadow: '0 0 12px rgba(249, 115, 22, 0.5)'
+                    }}></div>
+                    <span>Secure communications</span>
+                  </div>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginBottom: '12px',
+                    fontSize: '1.1rem',
+                    color: '#e0e7ff'
+                  }}>
+                    <div style={{
+                      width: '8px',
+                      height: '8px',
+                      background: 'linear-gradient(135deg, #f97316 0%, #dc2626 100%)',
+                      borderRadius: '50%',
+                      marginRight: '16px',
+                      boxShadow: '0 0 12px rgba(249, 115, 22, 0.5)'
+                    }}></div>
+                    <span>8-personnel capacity</span>
+                  </div>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginBottom: '12px',
+                    fontSize: '1.1rem',
+                    color: '#e0e7ff'
+                  }}>
+                    <div style={{
+                      width: '8px',
+                      height: '8px',
+                      background: 'linear-gradient(135deg, #f97316 0%, #dc2626 100%)',
+                      borderRadius: '50%',
+                      marginRight: '16px',
+                      boxShadow: '0 0 12px rgba(249, 115, 22, 0.5)'
+                    }}></div>
+                    <span>Advanced electronics</span>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Module 3 - Tactical Operations */}
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                whileHover={{ scale: 1.02, y: -8 }}
+                style={{
+                  background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.15) 0%, rgba(34, 197, 94, 0.05) 100%)',
+                  border: '2px solid rgba(34, 197, 94, 0.3)',
+                  borderRadius: '24px',
+                  padding: '40px',
+                  backdropFilter: 'blur(20px)',
+                  boxShadow: '0 20px 60px rgba(34, 197, 94, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
+                  position: 'relative',
+                  overflow: 'hidden'
+                }}
+              >
+                {/* Photo Placeholder */}
+                <div style={{
+                  width: '100%',
+                  height: '250px',
+                  background: 'linear-gradient(135deg, #059669 0%, #22c55e 100%)',
+                  borderRadius: '16px',
+                  marginBottom: '30px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '1.5rem',
+                  fontWeight: '700',
+                  color: '#ffffff',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em',
+                  boxShadow: '0 12px 32px rgba(34, 197, 94, 0.3)'
+                }}>
+                  Tactical Image
+                </div>
+
+                <h3 style={{
+                  fontSize: '2.2rem',
+                  fontWeight: '800',
+                  color: '#ffffff',
+                  marginBottom: '20px',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em'
+                }}>
+                  Tactical Ops
+                </h3>
+
+                {/* Bullet Points */}
+                <div style={{ marginBottom: '30px' }}>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginBottom: '12px',
+                    fontSize: '1.1rem',
+                    color: '#e0e7ff'
+                  }}>
+                    <div style={{
+                      width: '8px',
+                      height: '8px',
+                      background: 'linear-gradient(135deg, #22c55e 0%, #059669 100%)',
+                      borderRadius: '50%',
+                      marginRight: '16px',
+                      boxShadow: '0 0 12px rgba(34, 197, 94, 0.5)'
+                    }}></div>
+                    <span>Special operations ready</span>
+                  </div>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginBottom: '12px',
+                    fontSize: '1.1rem',
+                    color: '#e0e7ff'
+                  }}>
+                    <div style={{
+                      width: '8px',
+                      height: '8px',
+                      background: 'linear-gradient(135deg, #22c55e 0%, #059669 100%)',
+                      borderRadius: '50%',
+                      marginRight: '16px',
+                      boxShadow: '0 0 12px rgba(34, 197, 94, 0.5)'
+                    }}></div>
+                    <span>Stealth deployment</span>
+                  </div>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginBottom: '12px',
+                    fontSize: '1.1rem',
+                    color: '#e0e7ff'
+                  }}>
+                    <div style={{
+                      width: '8px',
+                      height: '8px',
+                      background: 'linear-gradient(135deg, #22c55e 0%, #059669 100%)',
+                      borderRadius: '50%',
+                      marginRight: '16px',
+                      boxShadow: '0 0 12px rgba(34, 197, 94, 0.5)'
+                    }}></div>
+                    <span>Modular configuration</span>
+                  </div>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginBottom: '12px',
+                    fontSize: '1.1rem',
+                    color: '#e0e7ff'
+                  }}>
+                    <div style={{
+                      width: '8px',
+                      height: '8px',
+                      background: 'linear-gradient(135deg, #22c55e 0%, #059669 100%)',
+                      borderRadius: '50%',
+                      marginRight: '16px',
+                      boxShadow: '0 0 12px rgba(34, 197, 94, 0.5)'
+                    }}></div>
+                    <span>Rapid response capability</span>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* Single Image Section */}
             <motion.div
-              whileHover={{ scale: 1.05, y: -12 }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: 0.8 }}
               style={{
-                background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(20, 20, 20, 0.7) 100%)',
-                border: '2px solid rgba(255, 102, 0, 0.4)',
-                borderRadius: '20px',
-                padding: '40px',
-                backdropFilter: 'blur(15px)',
-                boxShadow: '0 12px 48px rgba(255, 102, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
+                width: '100%',
+                height: '500px',
+                background: 'linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%)',
+                borderRadius: '32px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                border: '2px solid rgba(255, 255, 255, 0.1)',
+                boxShadow: '0 32px 80px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
                 position: 'relative',
                 overflow: 'hidden'
               }}
             >
               <div style={{
-                position: 'absolute',
-                top: '20px',
-                right: '20px',
-                background: 'linear-gradient(135deg, rgba(255, 102, 0, 0.8) 0%, rgba(255, 153, 51, 0.6) 100%)',
-                border: '1px solid rgba(255, 102, 0, 0.4)',
-                borderRadius: '8px',
-                padding: '6px 12px',
-                fontSize: '0.8rem',
-                fontWeight: '600',
+                fontSize: '2.5rem',
+                fontWeight: '900',
                 color: '#ffffff',
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase'
-              }}>
-                Command Center
-              </div>
-              
-              <h3 style={{
-                fontSize: '2rem',
-                fontWeight: '700',
-                color: '#ffffff',
-                marginBottom: '16px',
                 textTransform: 'uppercase',
-                letterSpacing: '0.1em'
+                letterSpacing: '0.2em',
+                textAlign: 'center',
+                textShadow: '0 4px 20px rgba(0, 0, 0, 0.8)',
+                background: 'linear-gradient(135deg, #ffffff 0%, #e0e7ff 50%, #ffffff 100%)',
+                backgroundClip: 'text',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent'
               }}>
-                Field Command
-              </h3>
-              <p style={{
-                fontSize: '1.1rem',
-                color: '#cccccc',
-                lineHeight: '1.6',
-                fontWeight: '300',
-                marginBottom: '24px'
-              }}>
-                Command and control shelter system for military operations and tactical headquarters with secure communications and advanced electronics.
-              </p>
-              
-              <div style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(2, 1fr)',
-                gap: '16px',
-                marginBottom: '24px'
-              }}>
-                <div>
-                  <div style={{ fontSize: '1.2rem', fontWeight: '700', color: '#ffffff', marginBottom: '4px' }}>4 Minutes</div>
-                  <div style={{ fontSize: '0.9rem', color: '#cccccc', textTransform: 'uppercase' }}>Deployment</div>
-                </div>
-                <div>
-                  <div style={{ fontSize: '1.2rem', fontWeight: '700', color: '#ffffff', marginBottom: '4px' }}>8 Personnel</div>
-                  <div style={{ fontSize: '0.9rem', color: '#cccccc', textTransform: 'uppercase' }}>Capacity</div>
+                Military Operations
+                <div style={{
+                  fontSize: '1.2rem',
+                  fontWeight: '300',
+                  marginTop: '16px',
+                  letterSpacing: '0.1em',
+                  color: '#e0e7ff'
+                }}>
+                  Deploy Anywhere • Anytime • Any Conditions
                 </div>
               </div>
-              
-              <Link href="/configurator/field-command" style={{ textDecoration: 'none' }}>
-                <motion.div
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  style={{
-                    background: 'linear-gradient(135deg, rgba(255, 102, 0, 0.8) 0%, rgba(255, 153, 51, 0.6) 100%)',
-                    border: '2px solid rgba(255, 102, 0, 0.6)',
-                    borderRadius: '12px',
-                    padding: '16px 32px',
-                    color: '#ffffff',
-                    fontSize: '1.1rem',
-                    fontWeight: '700',
-                    letterSpacing: '0.05em',
-                    textTransform: 'uppercase',
-                    cursor: 'pointer',
-                    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                    backdropFilter: 'blur(10px)',
-                    boxShadow: '0 8px 32px rgba(255, 102, 0, 0.3)',
-                    textAlign: 'center'
-                  }}
-                >
-                  Configure Field Command
-                </motion.div>
-              </Link>
             </motion.div>
           </div>
         </div>
