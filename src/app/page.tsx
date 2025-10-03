@@ -108,7 +108,10 @@ export default function WeatherhavenHomePage() {
         <div style={{
           width: '100%',
           height: '600px',
-          background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(20, 20, 20, 0.6) 100%)',
+          backgroundImage: 'url(/mountainsimagethanks.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
           borderRadius: '24px',
           display: 'flex',
           alignItems: 'center',
@@ -119,26 +122,27 @@ export default function WeatherhavenHomePage() {
           boxShadow: '0 24px 80px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
           backdropFilter: 'blur(15px)'
         }}>
-          {/* Placeholder for hero background */}
+          {/* Overlay for better text readability */}
           <div style={{
             width: '100%',
             height: '100%',
-            background: 'linear-gradient(135deg, #0066cc 0%, #4da6ff 50%, #ff6600 100%)',
-            opacity: 0.2,
+            background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%)',
             position: 'absolute',
             top: 0,
-            left: 0
+            left: 0,
+            zIndex: 1
           }}></div>
           <div style={{
             fontSize: '4rem',
             color: '#ffffff',
             textAlign: 'center',
-            zIndex: 1,
+            zIndex: 2,
             fontWeight: '100',
             letterSpacing: '0.1em',
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
+            textShadow: '0 4px 20px rgba(0, 0, 0, 0.8)'
           }}>
-            Hero Background Placeholder
+            Weatherhaven
           </div>
         </div>
 
