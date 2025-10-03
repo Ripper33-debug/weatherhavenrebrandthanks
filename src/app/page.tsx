@@ -21,29 +21,28 @@ export default function WeatherhavenHomePage() {
   return (
     <div style={{
       minHeight: '100vh',
-      background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%)',
+      backgroundImage: 'url(/goodmountainsimagethanks.jpg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundAttachment: 'fixed',
       padding: '120px 24px 60px 24px',
       fontFamily: '"Inter", "SF Pro Display", system-ui, -apple-system, sans-serif',
       position: 'relative',
-      overflow: 'hidden',
-      border: '1px solid rgba(255, 255, 255, 0.08)',
-      boxShadow: 'inset 0 0 100px rgba(255, 255, 255, 0.02)'
+      overflow: 'hidden'
     }}>
       <Header />
       
-      {/* Hero Background Placeholder */}
+      {/* Site Background Overlay */}
       <div style={{
         position: 'absolute',
         top: 0,
         left: 0,
         right: 0,
         bottom: 0,
-        background: 'linear-gradient(135deg, rgba(0, 102, 204, 0.1) 0%, rgba(255, 102, 0, 0.1) 100%)',
-        zIndex: 0,
-        opacity: 0.3
-      }}>
-        {/* Hero background will be added here */}
-      </div>
+        background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 100%)',
+        zIndex: 0
+      }}></div>
 
       {/* Header */}
       <motion.div
@@ -104,59 +103,6 @@ export default function WeatherhavenHomePage() {
           zIndex: 1
         }}
       >
-        {/* Hero Section */}
-        <div style={{
-          width: '100%',
-          height: '600px',
-          backgroundImage: 'url(/goodmountainsimagethanks.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          borderRadius: '24px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          border: '2px solid rgba(255, 255, 255, 0.15)',
-          position: 'relative',
-          overflow: 'hidden',
-          boxShadow: '0 24px 80px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
-          backdropFilter: 'blur(15px)'
-        }}>
-          {/* Fallback gradient background in case image doesn't load */}
-          <div style={{
-            width: '100%',
-            height: '100%',
-            background: 'linear-gradient(135deg, #1e3a8a 0%, #3b82f6 25%, #06b6d4 50%, #10b981 75%, #f59e0b 100%)',
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            zIndex: 0
-          }}></div>
-          
-          {/* Overlay for better text readability */}
-          <div style={{
-            width: '100%',
-            height: '100%',
-            background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%)',
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            zIndex: 1
-          }}></div>
-          
-          <div style={{
-            fontSize: '4rem',
-            color: '#ffffff',
-            textAlign: 'center',
-            zIndex: 2,
-            fontWeight: '100',
-            letterSpacing: '0.1em',
-            textTransform: 'uppercase',
-            textShadow: '0 4px 20px rgba(0, 0, 0, 0.8)'
-          }}>
-            Weatherhaven
-          </div>
-        </div>
 
         {/* Features Section */}
         <div style={{
