@@ -100,10 +100,10 @@ export default function Header() {
             </button>
           </Link>
 
-          {/* Configurator Button */}
+          {/* Shelter Menu Button */}
           <button
             onClick={() => {
-              console.log('Configurator button clicked');
+              console.log('Shelter Menu button clicked');
               window.location.href = '/configurator';
             }}
             style={{
@@ -122,7 +122,7 @@ export default function Header() {
               borderRadius: '8px'
             }}
           >
-            Configurator
+            Shelter Menu
           </button>
 
           {/* Military Button */}
