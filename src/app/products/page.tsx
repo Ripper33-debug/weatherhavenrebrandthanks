@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 import Header from '../../components/Header';
 
 export default function ProductsPage() {
@@ -317,31 +316,6 @@ export default function ProductsPage() {
               </div>
             </div>
 
-            {/* Action Button */}
-            <Link href={`/configurator/${product.id}`} style={{ textDecoration: 'none' }}>
-              <motion.div
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                style={{
-                  background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%)',
-                  border: '2px solid rgba(255, 255, 255, 0.4)',
-                  borderRadius: '12px',
-                  padding: '16px 32px',
-                  color: '#ffffff',
-                  fontSize: '1.1rem',
-                  fontWeight: '700',
-                  letterSpacing: '0.05em',
-                  textTransform: 'uppercase',
-                  cursor: 'pointer',
-                  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                  backdropFilter: 'blur(10px)',
-                  boxShadow: '0 8px 32px rgba(255, 255, 255, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2)',
-                  textAlign: 'center'
-                }}
-              >
-                Configure {product.name}
-              </motion.div>
-            </Link>
           </motion.div>
         ))}
       </motion.div>
