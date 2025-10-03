@@ -332,24 +332,47 @@ export default function WeatherhavenHomePage() {
                   overflow: 'hidden'
                 }}
               >
-                {/* Photo Placeholder */}
+                {/* TRECC Product Image */}
                 <div style={{
                   width: '100%',
                   height: '250px',
-                  background: 'linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%)',
+                  backgroundImage: 'url(/models/trecc-military-deployment.jpg)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
                   borderRadius: '16px',
                   marginBottom: '30px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '1.5rem',
-                  fontWeight: '700',
-                  color: '#ffffff',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.1em',
-                  boxShadow: '0 12px 32px rgba(0, 102, 204, 0.3)'
+                  position: 'relative',
+                  overflow: 'hidden',
+                  boxShadow: '0 12px 32px rgba(0, 102, 204, 0.3)',
+                  border: '2px solid rgba(255, 255, 255, 0.1)'
                 }}>
-                  TRECC Image
+                  {/* Image overlay for better text readability */}
+                  <div style={{
+                    position: 'absolute',
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    background: 'linear-gradient(transparent, rgba(0, 0, 0, 0.8))',
+                    padding: '20px',
+                    color: '#ffffff'
+                  }}>
+                    <div style={{
+                      fontSize: '1.2rem',
+                      fontWeight: '700',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.1em',
+                      marginBottom: '4px'
+                    }}>
+                      TRECC Military Deployment
+                    </div>
+                    <div style={{
+                      fontSize: '0.9rem',
+                      opacity: 0.9
+                    }}>
+                      Rapid deployment in extreme conditions
+                    </div>
+                  </div>
                 </div>
 
                 <h3 style={{
@@ -453,24 +476,47 @@ export default function WeatherhavenHomePage() {
                   overflow: 'hidden'
                 }}
               >
-                {/* Photo Placeholder */}
+                {/* Field Command Product Image */}
                 <div style={{
                   width: '100%',
                   height: '250px',
-                  background: 'linear-gradient(135deg, #dc2626 0%, #f97316 100%)',
+                  backgroundImage: 'url(/models/field-command-center.jpg)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
                   borderRadius: '16px',
                   marginBottom: '30px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '1.5rem',
-                  fontWeight: '700',
-                  color: '#ffffff',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.1em',
-                  boxShadow: '0 12px 32px rgba(255, 102, 0, 0.3)'
+                  position: 'relative',
+                  overflow: 'hidden',
+                  boxShadow: '0 12px 32px rgba(255, 102, 0, 0.3)',
+                  border: '2px solid rgba(255, 255, 255, 0.1)'
                 }}>
-                  Field Command Image
+                  {/* Image overlay for better text readability */}
+                  <div style={{
+                    position: 'absolute',
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    background: 'linear-gradient(transparent, rgba(0, 0, 0, 0.8))',
+                    padding: '20px',
+                    color: '#ffffff'
+                  }}>
+                    <div style={{
+                      fontSize: '1.2rem',
+                      fontWeight: '700',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.1em',
+                      marginBottom: '4px'
+                    }}>
+                      Field Command Center
+                    </div>
+                    <div style={{
+                      fontSize: '0.9rem',
+                      opacity: 0.9
+                    }}>
+                      Advanced command and control operations
+                    </div>
+                  </div>
                 </div>
 
                 <h3 style={{
@@ -574,24 +620,47 @@ export default function WeatherhavenHomePage() {
                   overflow: 'hidden'
                 }}
               >
-                {/* Photo Placeholder */}
+                {/* Tactical Operations Product Image */}
                 <div style={{
                   width: '100%',
                   height: '250px',
-                  background: 'linear-gradient(135deg, #059669 0%, #22c55e 100%)',
+                  backgroundImage: 'url(/models/tactical-operations-shelter.jpg)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
                   borderRadius: '16px',
                   marginBottom: '30px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '1.5rem',
-                  fontWeight: '700',
-                  color: '#ffffff',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.1em',
-                  boxShadow: '0 12px 32px rgba(34, 197, 94, 0.3)'
+                  position: 'relative',
+                  overflow: 'hidden',
+                  boxShadow: '0 12px 32px rgba(34, 197, 94, 0.3)',
+                  border: '2px solid rgba(255, 255, 255, 0.1)'
                 }}>
-                  Tactical Image
+                  {/* Image overlay for better text readability */}
+                  <div style={{
+                    position: 'absolute',
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    background: 'linear-gradient(transparent, rgba(0, 0, 0, 0.8))',
+                    padding: '20px',
+                    color: '#ffffff'
+                  }}>
+                    <div style={{
+                      fontSize: '1.2rem',
+                      fontWeight: '700',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.1em',
+                      marginBottom: '4px'
+                    }}>
+                      Tactical Operations Shelter
+                    </div>
+                    <div style={{
+                      fontSize: '0.9rem',
+                      opacity: 0.9
+                    }}>
+                      Special operations and stealth deployment
+                    </div>
+                  </div>
                 </div>
 
                 <h3 style={{
@@ -679,7 +748,7 @@ export default function WeatherhavenHomePage() {
               </motion.div>
             </div>
 
-            {/* Single Image Section */}
+            {/* Professional Military Operations Image */}
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -687,7 +756,10 @@ export default function WeatherhavenHomePage() {
               style={{
                 width: '100%',
                 height: '500px',
-                background: 'linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%)',
+                backgroundImage: 'url(/models/military-operations-global.jpg)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
                 borderRadius: '32px',
                 display: 'flex',
                 alignItems: 'center',
@@ -698,6 +770,17 @@ export default function WeatherhavenHomePage() {
                 overflow: 'hidden'
               }}
             >
+              {/* Professional overlay for text readability */}
+              <div style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 100%)',
+                zIndex: 1
+              }}></div>
+              
               <div style={{
                 fontSize: '2.5rem',
                 fontWeight: '900',
@@ -709,7 +792,9 @@ export default function WeatherhavenHomePage() {
                 background: 'linear-gradient(135deg, #ffffff 0%, #e0e7ff 50%, #ffffff 100%)',
                 backgroundClip: 'text',
                 WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent'
+                WebkitTextFillColor: 'transparent',
+                position: 'relative',
+                zIndex: 2
               }}>
                 Military Operations
                 <div style={{
