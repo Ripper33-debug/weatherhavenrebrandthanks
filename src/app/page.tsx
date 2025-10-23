@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Header from '../components/Header';
 import Scroll3DModel from '../components/Scroll3DModel';
+import Simple3DTest from '../components/Simple3DTest';
 
 export default function WeatherhavenHomePage() {
   const [mounted, setMounted] = useState(false);
@@ -34,6 +35,7 @@ export default function WeatherhavenHomePage() {
         }}>
           <Header />
           <Scroll3DModel />
+          <Simple3DTest />
           
           {/* Site Background Overlay */}
       <div style={{
