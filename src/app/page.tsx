@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Header from '../components/Header';
+import Scroll3DModel from '../components/Scroll3DModel';
 
 export default function WeatherhavenHomePage() {
   const [mounted, setMounted] = useState(false);
@@ -30,10 +31,11 @@ export default function WeatherhavenHomePage() {
       fontFamily: '"Inter", "SF Pro Display", system-ui, -apple-system, sans-serif',
       position: 'relative',
       overflow: 'hidden'
-    }}>
-      <Header />
-      
-      {/* Site Background Overlay */}
+        }}>
+          <Header />
+          <Scroll3DModel />
+          
+          {/* Site Background Overlay */}
       <div style={{
         position: 'absolute',
         top: 0,
