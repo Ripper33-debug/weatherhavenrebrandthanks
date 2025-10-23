@@ -59,6 +59,7 @@ export default function Scroll3DModel() {
     loader.load(
       '/Greenopenmodel.glb',
       (gltf) => {
+        console.log('GLB model loaded successfully');
         const model = gltf.scene;
         model.scale.set(2, 2, 2);
         model.position.set(0, 0, 0);
@@ -73,6 +74,7 @@ export default function Scroll3DModel() {
         scene.add(model);
         modelRef.current = model;
         setIsLoaded(true);
+        console.log('3D model added to scene');
       },
       (progress) => {
         console.log('Loading progress:', (progress.loaded / progress.total) * 100 + '%');
@@ -142,7 +144,7 @@ export default function Scroll3DModel() {
         left: 0,
         width: '100vw',
         height: '100vh',
-        zIndex: 1,
+        zIndex: 10,
         pointerEvents: 'none'
       }}
     />
