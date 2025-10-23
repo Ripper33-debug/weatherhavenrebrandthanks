@@ -27,7 +27,7 @@ export default function Scroll3DModel() {
       0.1,
       1000
     );
-    camera.position.set(0, 0, 5);
+    camera.position.set(0, 0, 8);
     cameraRef.current = camera;
 
     // Renderer setup
@@ -61,10 +61,21 @@ export default function Scroll3DModel() {
       (gltf) => {
         console.log('GLB model loaded successfully');
         const model = gltf.scene;
-        model.scale.set(2, 2, 2);
+        model.scale.set(3, 3, 3); // Made larger
         model.position.set(0, 0, 0);
         model.castShadow = true;
         model.receiveShadow = true;
+        
+        // Add a simple material to make it more visible
+        model.traverse((child) => {
+          if (child instanceof THREE.Mesh) {
+            child.material = new THREE.MeshStandardMaterial({
+              color: 0x00ff00, // Bright green for visibility
+              metalness: 0.3,
+              roughness: 0.4
+            });
+          }
+        });
         
         // Center the model
         const box = new THREE.Box3().setFromObject(model);
@@ -144,8 +155,9 @@ export default function Scroll3DModel() {
         left: 0,
         width: '100vw',
         height: '100vh',
-        zIndex: 10,
-        pointerEvents: 'none'
+        zIndex: 5,
+        pointerEvents: 'none',
+        background: 'rgba(0, 0, 0, 0.1)' // Slight background to see if component is rendering
       }}
     />
   );
